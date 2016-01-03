@@ -1,0 +1,19 @@
+{
+  "name": "oxboot/filesystem",
+  "description": "Filesystem component",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zorca",
+      "email": "vs@zorca.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Oxboot\\Filesystem\\": ""
+    }
+  }
+}
