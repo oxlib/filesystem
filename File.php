@@ -8,5 +8,26 @@ namespace Oxboot\Filesystem;
 
 class File
 {
+    /**
+     * Determine if a file exists
+     * @param $filePath
+     * @return bool
+     */
+    public static function exists($filePath)
+    {
+        return (file_exists($filePath) && is_file($filePath));
+    }
 
+    /**
+     * Get the contents of a file
+     * @param $filePath
+     * @return bool|string
+     */
+    public static function get($filePath)
+    {
+        if (File::exists($filePath)) {
+            return file_get_contents($filePath);
+        }
+        return false;
+    }
 }
