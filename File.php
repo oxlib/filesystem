@@ -30,4 +30,16 @@ class File
         }
         return false;
     }
+
+    /**
+     * Writes the contents into a file
+     * @param $path
+     * @param $contents
+     * @param bool $lock
+     * @return int
+     */
+    public function put($path, $contents, $lock = false)
+    {
+        return file_put_contents($path, $contents, $lock ? LOCK_EX : 0);
+    }
 }
