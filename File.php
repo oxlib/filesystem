@@ -19,7 +19,7 @@ class File
     }
 
     /**
-     * Get the contents of a file
+     * Get the content of a file
      * @param $filePath
      * @return bool|string
      */
@@ -32,14 +32,14 @@ class File
     }
 
     /**
-     * Writes the contents into a file
-     * @param $path
-     * @param $contents
+     * Writes the content into a file
+     * @param $filePath
+     * @param $content
      * @param bool $lock
      * @return int
      */
-    public static function put($path, $contents, $lock = false)
+    public static function put($filePath, $content, $lock = false)
     {
-        return file_put_contents($path, $contents, $lock ? LOCK_EX : 0);
+        return file_put_contents($filePath, $content, $lock ? LOCK_EX : 0);
     }
 }
