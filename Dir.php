@@ -1,6 +1,6 @@
 <?php
 /**
- * Project: oxlib
+ * Project: filesystem
  * Author: Zorca (vs@zorca.org)
  */
 
