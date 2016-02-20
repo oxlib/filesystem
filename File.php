@@ -1,10 +1,10 @@
 <?php
 /**
- * Project: filesystem
+ * Project: oxlib
  * Author: Zorca (vs@zorca.org)
  */
 
-namespace Oxboot\Filesystem;
+namespace Oxlib\Filesystem;
 
 class File
 {
